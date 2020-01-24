@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Card from "./Card.js";
+import Cards from "./Card.js";
 import { Container, Row, Col } from "reactstrap";
 
 export default function Grid() {
@@ -22,7 +22,7 @@ export default function Grid() {
     <Container>
       <Row>
         {characters.map(chars => {
-          return <Card chars={chars} key={chars.id} />;
+          return <Cards chars={chars} key={chars.id} />;
         })}
       </Row>
     </Container>
